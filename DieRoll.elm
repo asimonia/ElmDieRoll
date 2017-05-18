@@ -23,6 +23,11 @@ type alias Model =
     }
 
 
+init : ( Model, Cmd Msg )
+init =
+    ( Model 1, Cmd.none )
+
+
 
 -- UPDATE
 
