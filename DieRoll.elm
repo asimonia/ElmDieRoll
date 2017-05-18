@@ -21,3 +21,15 @@ main =
 type alias Model =
     { dieFace : Int
     }
+
+
+
+-- VIEW
+
+
+view : Model -> Html Msg
+view model =
+    div []
+        [ h1 [] [ text (toString model.dieFace) ]
+        , button [ onClick Roll ] [ text "Roll" ]
+        ]
