@@ -12,3 +12,12 @@ main =
         , update = update
         , subscriptions = subscriptions
         }
+
+
+
+-- MODEL
+
+
+type alias Model =
+    { dieFace : Int
+    }
