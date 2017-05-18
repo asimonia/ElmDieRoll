@@ -24,6 +24,21 @@ type alias Model =
 
 
 
+-- UPDATE
+
+
+type Msg
+    = Roll
+
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        Roll ->
+            ( model, Cmd.none )
+
+
+
 -- VIEW
 
 
