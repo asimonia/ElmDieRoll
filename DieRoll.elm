@@ -34,13 +34,17 @@ init =
 
 type Msg
     = Roll
+    | NewFace Int
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Roll ->
-            ( model, Cmd.none )
+            ( model, Random.generate NewFace (Random.int 1 6) )
+
+        NewFace newFace ->
+            ( Model newFace, Cmd.none )
 
 
 
