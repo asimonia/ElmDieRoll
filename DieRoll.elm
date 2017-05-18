@@ -33,3 +33,12 @@ view model =
         [ h1 [] [ text (toString model.dieFace) ]
         , button [ onClick Roll ] [ text "Roll" ]
         ]
+
+
+
+-- SUBSCRIPTIONS
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
